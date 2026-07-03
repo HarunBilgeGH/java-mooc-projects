@@ -66,7 +66,40 @@ public class JavaPracticeToolkit {
                 System.out.println("Odd numbers: "+oddN);
             }
             else if (choice == 2) {
-                
+                System.out.println("Range Calculator");
+
+                int sum = 0;
+                int fact = 1;
+                int evenNumbers = 0;
+                int oddNumbers = 0;
+
+                System.out.print("First Number: ");
+                int first = Integer.valueOf(scan.nextLine());
+
+                System.out.print("Last Number: ");
+                int last = Integer.valueOf(scan.nextLine());
+
+                System.out.println("Numbers: ");
+
+                for (int i = first; i <= last; i++) {
+                    System.out.println(i);
+                    sum = sum + i;
+
+                    if (i % 2 == 0) {
+                        evenNumbers++;
+                    } else {
+                        oddNumbers++;
+                    }
+                }
+
+                for (int x = 1; x <= last; x++) {
+                    fact = fact * x;
+                }
+
+                System.out.println("Sum: " + sum);
+                System.out.println("Factorial of last number: " + fact);
+                System.out.println("Even numbers: " + evenNumbers);
+                System.out.println("Odd numbers: " + oddNumbers);
             }
             else if (choice == 3) {
                 
