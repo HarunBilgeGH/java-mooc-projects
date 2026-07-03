@@ -28,6 +28,7 @@ public class StudentLifeCalculator {
         String remainingMoneyText = "";
         String scholarship = "";
         String giftTaxStatus = "";
+        String result = "";
         double tax = 0;
         int totalExpenses = 0;
         int remainingMoney = 0;
@@ -36,6 +37,13 @@ public class StudentLifeCalculator {
         }
         else {
             studentStatus = "Underage Student";
+        }
+
+        if (examPoints>=60) {
+            result = "Passed";
+        }
+        else if (examPoints<60) {
+            result = "Failed";
         }
 
         if (examPoints == 100) {
@@ -54,7 +62,7 @@ public class StudentLifeCalculator {
             grade = "CC";
         }
         else {
-            grade = "Failed";
+            grade = "FF";
         }
 
         totalExpenses = monthlyRent+monthlyFoodExpense+monthlyTransportExpense;
@@ -84,5 +92,15 @@ public class StudentLifeCalculator {
         else if (giftMoneyReceived < 5000) {
             giftTaxStatus = "No tax";
         }
+
+        System.out.println("\nStudent report for "+name);
+        System.out.println("Age Status: "+studentStatus);
+        System.out.println("Grade: "+grade);
+        System.out.println("Result: "+result);
+        System.out.println("\nTotal Expenses: "+totalExpenses);
+        System.out.println("Remaining Money: "+remainingMoney);
+        System.out.println("Budget Status: "+remainingMoneyText);
+        System.out.println("\nScholarship Status: "+scholarship);
+        System.out.println("Gift Tax Status: "+giftTaxStatus);
     }
 }
