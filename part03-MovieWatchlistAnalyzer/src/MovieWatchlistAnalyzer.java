@@ -59,7 +59,18 @@ public class MovieWatchlistAnalyzer {
     }
 
     public static void searchMovies(ArrayList<String> movies, String word) {
+        for (String movie : movies) {
+            String[] parts = movie.split(",");
 
+            String name = parts[0];
+            int year = Integer.valueOf(parts[1]);
+            int rating = Integer.valueOf(parts[2]);
+            String genre = parts[3];
+
+            if (name.toLowerCase().contains(word.toLowerCase())) {
+                System.out.println(name + " (" + year + "), rating: " + rating + ", genre: " + genre);
+            }
+        }
     }
 
     public static void printBestMovie(ArrayList<String> movies) {
