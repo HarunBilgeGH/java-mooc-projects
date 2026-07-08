@@ -71,30 +71,55 @@ public class Main {
     }
 
     public static void printBooks(ArrayList<Book> books) {
-
+        for (Book book : books) {
+            System.out.println(book);
+        }
     }
 
     public static void searchByTitle(ArrayList<Book> books, String word) {
-
+        boolean found = false;
+        for (Book book : books) {
+            if (book.title().toLowerCase().contains(word.toLowerCase())) {
+                System.out.println(book);
+                found = true;
+            }
+            
+            if (found != true) {
+                System.out.println("Cant find.");
+            }
+        }
     }
 
     public static void searchByAuthor(ArrayList<Book> books, String author) {
-
+        boolean found = false;
+        for (Book book : books) {
+            if (book.author().toLowerCase().contains(author.toLowerCase())) {
+                System.out.println(book);
+                found = true;
+            }
+        }
+        if (found != true) {
+                System.out.println("Cant find.");
+            }
     }
 
     public static void printLongBooks(ArrayList<Book> books) {
-
+        for (Book book : books) {
+            if (book.pages()>=400) {
+                System.out.println(book);
+            }
+        }
     }
 
     public static void borrowBook(ArrayList<Book> books, String title) {
-
+        
     }
 
     public static void returnBook(ArrayList<Book> books, String title) {
-
+        
     }
 
     public static void printAvailableBooks(ArrayList<Book> books) {
-
+        
     }
 }
