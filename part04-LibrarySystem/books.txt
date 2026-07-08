@@ -1,0 +1,5 @@
+Clean Code,Robert Martin,464
+Effective Java,Joshua Bloch,416
+Java Programming,University of Helsinki,300
+The Pragmatic Programmer,Andrew Hunt,352
+Head First Java,Kathy Sierra,720

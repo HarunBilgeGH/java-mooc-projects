@@ -40,6 +40,6 @@ public class Book {
     }
 
     public String toString() {
-        return this.title + " by " + this.author + ", "+ this.pages + " pages " + (this.borrowed ? "available" : "not available");
+        return this.title + " by " + this.author + ", "+ this.pages + " pages " + (this.borrowed ? "not available" : "available");
     }
 }

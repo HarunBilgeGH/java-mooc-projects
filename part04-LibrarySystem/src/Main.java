@@ -83,11 +83,10 @@ public class Main {
                 System.out.println(book);
                 found = true;
             }
-            
-            if (found != true) {
+        }
+        if (found != true) {
                 System.out.println("Cant find.");
             }
-        }
     }
 
     public static void searchByAuthor(ArrayList<Book> books, String author) {
@@ -104,22 +103,35 @@ public class Main {
     }
 
     public static void printLongBooks(ArrayList<Book> books) {
-        for (Book book : books) {
-            if (book.pages()>=400) {
-                System.out.println(book);
+    for (Book book : books) {
+        if (book.longBook()) {
+            System.out.println(book);
+        }
+    }
+}
+    public static void borrowBook(ArrayList<Book> books, String title) {
+        for (Book book: books) {
+            if (book.title().toLowerCase().contains(title.toLowerCase()) && !book.isBorrowed()) {
+                book.borrowBook();
+                System.out.println("You borrowed " + book);
             }
         }
     }
 
-    public static void borrowBook(ArrayList<Book> books, String title) {
-        
-    }
-
     public static void returnBook(ArrayList<Book> books, String title) {
-        
+        for (Book book: books) {
+            if (book.title().toLowerCase().contains(title.toLowerCase()) && book.isBorrowed()) {
+                book.returnBook();
+                System.out.println("You returned " + book);
+            }
+        }
     }
 
     public static void printAvailableBooks(ArrayList<Book> books) {
-        
+        for (Book book: books) {
+            if (!book.isBorrowed()) {
+                System.out.println(book);
+            }
+        }
     }
 }
