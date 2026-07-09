@@ -4,43 +4,51 @@ public class Student {
     private int credits;
 
     public Student(String name) {
-        // TODO
+    this(name, 0, 0);
     }
 
     public Student(String name, int age) {
-        // TODO
+        this(name, age, 0);
     }
 
     public Student(String name, int age, int credits) {
-        // TODO
+        this.name = name;
+        this.age = age;
+        this.credits = credits;
     }
 
     public String getName() {
-        // TODO
+        return this.name;
     }
 
     public int getAge() {
-        // TODO
+        return this.age;
     }
 
     public int getCredits() {
-        // TODO
+        return this.credits;
     }
 
     public void growOlder() {
-        // TODO
+        this.age += 1;
     }
 
     public void addCredits(int amount) {
-        // TODO
+        if (amount >= 0) {
+            this.credits +=amount;
+        }
     }
 
     public boolean hasEnoughCredits(int requiredCredits) {
-        // TODO
+        boolean enough = false;
+        if (requiredCredits <= this.credits) {
+            enough=true;
+        }
+        return enough;
     }
 
     @Override
     public String toString() {
-        // TODO
+        return "";
     }
 }
