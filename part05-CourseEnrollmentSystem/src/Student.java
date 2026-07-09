@@ -40,15 +40,11 @@ public class Student {
     }
 
     public boolean hasEnoughCredits(int requiredCredits) {
-        boolean enough = false;
-        if (requiredCredits <= this.credits) {
-            enough=true;
-        }
-        return enough;
+        return (this.credits >= requiredCredits);
     }
 
     @Override
     public String toString() {
-        return "";
+        return this.name + " " + this.age + " " + this.credits;
     }
 }

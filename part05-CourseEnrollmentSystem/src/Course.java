@@ -4,32 +4,44 @@ public class Course {
     private int requiredCredits;
 
     public Course(String code, String name, int requiredCredits) {
-        // TODO
+        this.code = code;
+        this.name = name;
+        this.requiredCredits = requiredCredits;
     }
 
     public String getCode() {
-        // TODO
+        return this.code;
     }
 
     public String getName() {
-        // TODO
+        return this.name;
     }
 
     public int getRequiredCredits() {
-        // TODO
+        return this.requiredCredits;
     }
 
     public boolean canEnroll(Student student) {
-        // TODO
+        return student.getCredits() >= this.getRequiredCredits();
     }
 
     @Override
     public boolean equals(Object compared) {
-        // TODO
+        if (this == compared) {
+            return true;
+        }
+        if (!(compared instanceof Course)) {
+            return false;
+        }
+        Course comparedCourse = (Course) compared;
+        if (comparedCourse.getCode().equals(this.getCode())) {
+            return true;
+        }
+        return false;
     }
 
     @Override
     public String toString() {
-        // TODO
+        return this.code + " " + this.name + " " + this.requiredCredits;
     }
 }
