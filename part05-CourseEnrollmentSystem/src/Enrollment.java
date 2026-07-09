@@ -4,31 +4,33 @@ public class Enrollment {
     private SimpleDate date;
 
     public Enrollment(Student student, Course course, SimpleDate date) {
-        // TODO
+        this.student = student;
+        this.course = course;
+        this.date = date;
     }
 
     public Student getStudent() {
-        // TODO
+        return this.student;
     }
 
     public Course getCourse() {
-        // TODO
+        return this.course;
     }
 
     public SimpleDate getDate() {
-        // TODO
+        return this.date;
     }
 
     public boolean isForStudent(Student student) {
-        // TODO
+        return student.equals(this.student);
     }
 
     public boolean isForCourse(Course course) {
-        // TODO
+        return course.equals(this.course);
     }
 
     @Override
     public String toString() {
-        // TODO
+        return this.student + " " + this.course + " " + this.date;
     }
 }   
