@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="library.LibraryTest" time="0.0" tests="0" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="library.LibraryTest" time="0.001" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1254"/>
-    <property name="java.class.path" value="C:\Users\harun\documents\github\java-mooc-projects\part06-miniLibrary\minilibrary\target\test-classes;C:\Users\harun\documents\github\java-mooc-projects\part06-miniLibrary\minilibrary\target\classes;"/>
+    <property name="java.class.path" value="C:\Users\harun\documents\github\java-mooc-projects\part06-miniLibrary\minilibrary\target\test-classes;C:\Users\harun\documents\github\java-mooc-projects\part06-miniLibrary\minilibrary\target\classes;C:\Users\harun\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\harun\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="java.vm.vendor" value="Eclipse Adoptium"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,9 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="TR"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.19.10-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\harun\AppData\Local\Temp\surefire2655564104554272838\surefirebooter-20260713110603436_3.jar C:\Users\harun\AppData\Local\Temp\surefire2655564104554272838 2026-07-13T11-06-02_413-jvmRun1 surefire-20260713110603436_1tmp surefire_0-20260713110603436_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\harun\AppData\Local\Temp\surefire96682167108418556\surefirebooter-20260713112151194_3.jar C:\Users\harun\AppData\Local\Temp\surefire96682167108418556 2026-07-13T11-21-51_054-jvmRun1 surefire-20260713112151194_1tmp surefire_0-20260713112151194_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\harun\documents\github\java-mooc-projects\part06-miniLibrary\minilibrary\target\test-classes;C:\Users\harun\documents\github\java-mooc-projects\part06-miniLibrary\minilibrary\target\classes;"/>
+    <property name="surefire.test.class.path" value="C:\Users\harun\documents\github\java-mooc-projects\part06-miniLibrary\minilibrary\target\test-classes;C:\Users\harun\documents\github\java-mooc-projects\part06-miniLibrary\minilibrary\target\classes;C:\Users\harun\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\harun\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\harun"/>
     <property name="user.language" value="tr"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\harun\AppData\Local\Temp\surefire2655564104554272838\surefirebooter-20260713110603436_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\harun\AppData\Local\Temp\surefire96682167108418556\surefirebooter-20260713112151194_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.19+10"/>
@@ -58,4 +58,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
+  <testcase name="bookToStringIsCorrect" classname="library.LibraryTest" time="0.0"/>
+  <testcase name="booksWithSameTitleAndAuthorAreEqual" classname="library.LibraryTest" time="0.0"/>
+  <testcase name="booksWithDifferentAuthorAreNotEqual" classname="library.LibraryTest" time="0.0"/>
 </testsuite>
