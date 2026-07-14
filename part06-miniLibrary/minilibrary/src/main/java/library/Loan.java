@@ -1,8 +1,8 @@
 package library;
 
 public class Loan {
-    private Book book;
-    private Member member;
+    private Book book = null;
+    private Member member = null;
     public Loan(Book book, Member member) {
         this.book = book;
         this.member = member;

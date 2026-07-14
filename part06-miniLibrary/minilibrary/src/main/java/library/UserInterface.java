@@ -7,7 +7,8 @@ import java.util.Scanner;
         private Scanner scanner;
 
         public UserInterface(Library library, Scanner scanner) {
-
+            this.library = library;
+            this.scanner = scanner;
         }
 
         public void start() {
