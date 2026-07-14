@@ -4,25 +4,26 @@ public class Loan {
     private Book book;
     private Member member;
     public Loan(Book book, Member member) {
-
+        this.book = book;
+        this.member = member;
     }
 
     public Book getBook() {
-        return book;
+        return this.book;
     }
     public Member getMember() {
-        return member;
+        return this.member;
     }
 
     public boolean isForBook(Book book) {
-        return false;
+        return this.book.equals(book);
     }
     public boolean isForMember(Member member) {
-        return false;
+        return this.member.equals(member);
     }
 
     @Override
     public String toString() {
-        return "";
+        return book.toString() + " loaned to " + member.toString(); 
     }
 }
